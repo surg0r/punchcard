@@ -4,6 +4,8 @@ Python functions to convert mnemonic or hexseed to and from binary for use with 
 # Usage
 Within a terminal, clone the repo to your local machine and directory with: `git clone https://github.com/surg0r/punchcard`
 
+Move into the punchcard directory: `cd punchcard`
+
 To convert from qrl mnemonic or hexseed: `python to_pc.py`
 
 Paste your hexseed or mnemonic phrase and the tool outputs your binary seed.
