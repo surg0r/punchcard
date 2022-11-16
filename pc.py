@@ -34,6 +34,14 @@ def hexseed_to_mnemonic(hexseed):
         m.append(words.words[int(nibbles, 16)])
     return " ".join(m)
 
+# returns hexstring from a valid mnemonic
+def mnemonic_to_hexseed(mnemonic):
+    s = mnemonic.split()
+    h = []
+    for word in s:
+        h.append(hex(words.words.index(word.lower()))[2:].rjust(3,'0'))
+    return "".join(h)
+
 # returns a mnemonic from a string of padded 12 bit binary strings
 def bin_to_mnemonic(bin):
     s = bin.split()
